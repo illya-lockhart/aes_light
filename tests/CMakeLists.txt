@@ -4,6 +4,8 @@ if(NOT TARGET aes_light)
 endif()
 
 add_executable(aes_light_tests 
-	main.c)
+	tests.h
+	main.c
+	expansion_keys.c )
 
 target_link_libraries(aes_light_tests PRIVATE aes_light)
