@@ -63,6 +63,6 @@ uint32_t test_expansion_key(aes_working_buffer *buff, uint32_t i)
           return 1;
         }
     }
-
+  printf("\t Success\n");
   return 0;
 }

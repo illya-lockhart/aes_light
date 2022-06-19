@@ -11,8 +11,8 @@ project(aes_light VERSION 0.1.0 LANGUAGES C)
 
 # Set the include path so the library can define symbols for the
 # external headers and include the source for the library
-include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 add_subdirectory(src)
+target_include_directories(aes_light PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
 
 # Add the examples
 if(${AES_BUILD_TESTS})
